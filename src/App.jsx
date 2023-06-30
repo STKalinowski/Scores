@@ -17,7 +17,6 @@ export default function App() {
 	
 	// API Call & Update Scores.
 	async function CreateScores(){
-			
 			try {
 				// Check for empty textInp
 				if(textInp.length === 0) {
