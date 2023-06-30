@@ -1,0 +1,110 @@
+html,
+body,
+#root {
+	background-color:#8a2be2;
+	color:#fde734;
+	font-family:Arial;
+}
+main{
+	display:flex;
+	justify-content:center;
+	height:100%;
+	margin:5px;
+}
+.container {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+	align-self:center;
+	width:100%;
+	max-width:1200px;
+	margin-top:20px;
+}
+.header-section{
+  grid-row: 1;
+	grid-column: span 2;
+	display:flex;
+	flex-direction:column;
+	padding:5px;
+}
+.main-section {
+  grid-row: 2;
+	grid-column: span 2;
+	border: solid #fde734; 2px;
+	display:flex;
+	justify-content:center;
+	padding:5px;
+	min-height:300px;
+}
+.section {
+  grid-row: 3;
+  grid-column: span 1;
+	/*border: solid #fde734 2px;*/
+	display:flex;
+	flex-direction:column;
+	padding:5px;
+}
+
+/* Default styles for buttons */
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fde734;
+	background: none;
+  border: solid #fde734 1px;
+  cursor: pointer;
+}
+/* Default styles for text inputs */
+input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #fde734;
+	color:#fde734;
+	background: none;
+	flex-grow:1;
+}
+/* Default styles for textareas */
+textarea {
+  padding: 2px;
+  font-size: 12px;
+  border: 1px solid #fde734;
+	resize: none;
+	min-height: 100px;
+	margin-bottom:5px;
+	flex-grow:1;
+	background:none;
+	color:#fde734;
+}
+h3{
+	margin:5px;
+	
+}
+/* Default styles for select elements */
+select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #fde734;
+  color: #fde734;
+  background: none;
+  width: 100%;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none; /* Added vendor-specific property */
+	border-radius:none;
+}
+
+/* Style the arrow icon */
+select::-ms-expand {
+  display: none;
+}
+
+select::after {
+  content: "\25BC";
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  color: #fde734;
+  pointer-events: none;
+}
